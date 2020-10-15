@@ -6,53 +6,55 @@ public class App {
 		// TODO Auto-generated method stub
 
 		// Assignment Requirement 3
-		// 3 (a.) Item Price
+		// 3 (a.) Item Price -- need decimal data type
 		double priceOfHardcoverBook = 19.50;
 		double priceOfLatte = 5.75; 
 		
-		// 3 (b.) Amount of money in wallet
+		// 3 (b.) Amount of money in wallet 
 		double weeklySpendingMoney = 40.00;	
 		double budgetForCoffee = 20.00;
 		
-		// 3 (c.) Number of Friends
+		// 3 (c.) Number of Friends -- int datatype needed
 		int numOfFacebookFriends = 1000;	
 		int numOfRealFriends = 400;
 		
-		// 3 (d.) Age in years (as a whole number)
+		// 3 (d.) Age in years (as a whole number) -- int data type needed
 		int ageInYears = 25;
 		int studentAgeInYears = 18;	
 		int studentYearsOnFacebook = studentAgeInYears - 13; 
 
-		// 3 (e.) First Name
+		// 3 (e.) First Name -- String object 
 		String firstName = "Rebekah";
 		String studentFirstName = "John";
 		
-		// 3 (f.) Last Name Variables
+		// 3 (f.) Last Name Variables -- String object 
 		String lastName = "Smith";
 		String studentLastName = "Student";
 			
-		// 3 (g.) Middle Initial 
+		// 3 (g.) Middle Initial -- single character
 		char middleInitial = 'P';		
 		char studentMiddleInitial = 'Q';
 		
 		
 		// Assignment Requirement 4
-		// 4 (c.) Full Name Variables
+		// 4 (c.) Full Name Variables -- Use Concatenate
 		String fullName = firstName + " " + middleInitial + ". " 
 				+ lastName;
 		String studentFullName = studentFirstName + " " 
 				+ studentMiddleInitial + ". " + studentLastName;
 	
-		//4 (a.) Amount of Money Variables;
+		//4 (a.) Amount of Money Variables -- subtraction
 		double remainingSpendingMoney = weeklySpendingMoney - priceOfHardcoverBook;
 		double remainingCoffeeMoney = budgetForCoffee - priceOfLatte; 
 	
-		//4 (b.) Number of Friends Variables
+		//4 (b.) Number of Friends Variables -- average
 		int avgNumOfRealFriends = numOfRealFriends/ageInYears;		
 		int avgNumOfFacebookFriends = numOfFacebookFriends/studentYearsOnFacebook;
 		
 		
 		//5 Printing all created variables!
+		//  Use of String.format ("%.2f", <double variable name>)
+		//  	to ensure 2 decimal points would print for a currency value.
 		System.out.println(" ");
 		// (a.) Amount of Money After Purchase Variables
 		System.out.println(firstName + " started the week with $" 
@@ -87,7 +89,8 @@ public class App {
 		System.out.println(studentFirstName + " is "
 				+ studentAgeInYears + " years old.");	
 		System.out.println("In his " + studentYearsOnFacebook 
-				+ " years on Facebook, " + studentFirstName + " has made an average of "
+				+ " years on Facebook, " + studentFirstName 
+				+ " has made an average of "
 				+ avgNumOfFacebookFriends + " friends each year.");
 		System.out.println(" ");
 		
